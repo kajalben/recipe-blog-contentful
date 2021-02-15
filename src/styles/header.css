@@ -11,10 +11,26 @@ Button.textColor {
 }
 
 Button.bgColor{
-   background:#FFC300 ;
+   background:#ffc300 ;
 }
 
 .navbarContainer {
-    background-color: rgba(255, 235, 205, 0.5);
-    
+    background-color: rgba(255, 235, 205, 0.5);  
+}
+
+.claimContainer {
+    height: 15rem;
+align-items: center;
+}
+
+.claimContainer h1 {
+    font-size: 6rem;
+    color:whitesmoke; 
+    background-color: rgb(255, 195, 0, 0.7);
+border-radius: 10px;
+padding-top: 0.5rem;
+padding-bottom: 1rem;
+padding-left: 1rem;
+padding-right: 1rem;
+
 }

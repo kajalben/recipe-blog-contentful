@@ -1,3 +1,4 @@
+import React from "react";
 import "../styles/header.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -29,9 +30,14 @@ const Header = () =>{
                 </Navbar.Collapse>
             </Navbar>
             </div>
+            <div className="claimContainer d-flex  justify-content-center">
+            <h1>Bits & Bites</h1>
             
+            
+            
+            </div>
 
-<h1>Header</h1>
+
         </div>
         
     );

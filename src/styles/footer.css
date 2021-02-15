@@ -1,0 +1,7 @@
+.footerContainer {
+    height: 6rem;
+    background-image: url("../image/Food-Blog.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
