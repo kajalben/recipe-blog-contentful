@@ -30,17 +30,12 @@ const Header = () =>{
                 </Navbar.Collapse>
             </Navbar>
             </div>
-            <div className="claimContainer d-flex  justify-content-center">
+            <div className="claimContainer d-flex flex-col  justify-content-center">
             <h1>Bits & Bites</h1>
-            
-            
-            
-            </div>
-
-
-        </div>
-        
-    );
+                
+         </div>
+       </div>
+     );
 }
 
 export default Header;
