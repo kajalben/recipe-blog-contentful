@@ -11,16 +11,16 @@ const Header = () =>{
     return(
         <div className="headerContainer">
             <div className="navbarContainer">
-            <Navbar bg="transparent" expand="lg">
+            <Navbar bg="transparent" expand="lg" >
                 <Navbar.Brand href="#home">Bits & Bites</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
                     <Nav.Link href="#home">Home</Nav.Link>
-                        <NavDropdown className="textColor bgColor" title="Our Sections" id="basic-nav-dropdown">
+                    <NavDropdown className="textColor bgColor" title="Our Sections" id="basic-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">Breakfast</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Lunch</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Dinner</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.2">Appetizers</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.3">Salads</NavDropdown.Item>
                     </NavDropdown>
                     </Nav>
                     <Form inline>

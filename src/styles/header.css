@@ -19,18 +19,19 @@ Button.bgColor{
 }
 
 .claimContainer {
-    height: 15rem;
-align-items: center;
+    height: 17rem;
+    align-items: center;
+
 }
 
 .claimContainer h1 {
     font-size: 6rem;
     color:whitesmoke; 
     background-color: rgb(255, 195, 0, 0.7);
-border-radius: 10px;
-padding-top: 0.5rem;
-padding-bottom: 1rem;
-padding-left: 1rem;
-padding-right: 1rem;
+    border-radius: 10px;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
 }
