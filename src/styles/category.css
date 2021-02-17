@@ -1,0 +1,12 @@
+.category-container{
+    width: 80%;
+    margin: auto;
+}
+
+.category-content{
+    margin: 2em 0;
+}
+
+.category-content h3{
+    margin: 2em 0 1em 0;
+}

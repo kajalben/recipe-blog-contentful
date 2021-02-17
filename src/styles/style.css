@@ -1,6 +1,8 @@
 @import "app.css";
 @import "footer.css";
 @import "header.css";
+@import "category.css";
+@import "recipe.css";
 
 * {
   box-sizing: border-box;
