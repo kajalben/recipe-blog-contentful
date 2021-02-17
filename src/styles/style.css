@@ -4,6 +4,12 @@
 @import "category.css";
 @import "recipe.css";
 
+:root{
+  --drak-yellow : #ffc300;
+  --light-yellow : rgb(255, 195, 0, 0.7);
+  --light-gray : rgba(255, 235, 205, 0.5);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
