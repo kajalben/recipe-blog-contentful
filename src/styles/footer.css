@@ -15,6 +15,10 @@
     background-color: rgba(255, 235, 205, 0.5);
 }
 
+.homelinkText {
+    padding-top: 0.45rem;
+    color: rgb(22, 22, 22);
+}
 
 .linkText {
 color: rgb(22, 22, 22);
