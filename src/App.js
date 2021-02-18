@@ -12,7 +12,7 @@ function App() {
 
   const displayloader = () => {
     if (errors) {
-      return <span>{errors.map((error) => error.message).join(",")}</span>;
+      return <span className="error-message">{errors.map((error) => `Try Again ! ${error.message}`).join(",")}</span>;
     }
     if (!breakfast && !salad && !appetizer) {
       return /*<span>Loading......</span>*/<div><Loader /></div>

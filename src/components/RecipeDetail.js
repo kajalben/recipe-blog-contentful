@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import AllRecipe from "./AllRecipe";
 import marked from "marked";
 
 const RecipeDetail = ({ breakfast, salad, appetizer }) => {
   const { category, id } = useParams();
+
   const filterRecipe = (recipes) => {
     return recipes
       .filter((recipe) => recipe.sys.id == id)
