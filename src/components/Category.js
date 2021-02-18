@@ -4,7 +4,6 @@ import RecipeDisplay from "./RecipeDisplay";
 export default function Category({ breakfast, salad, appetizer }) {
   return (
     <>
-      <div className="category-container">
         <div className="category-content">
           <h3>Breackfast Recipes</h3>
           <RecipeDisplay recipes={breakfast} />
@@ -17,7 +16,6 @@ export default function Category({ breakfast, salad, appetizer }) {
           <h3>Appetizer Recipes</h3>
           <RecipeDisplay recipes={appetizer} />
         </div>
-      </div>
       );
     </>
   );

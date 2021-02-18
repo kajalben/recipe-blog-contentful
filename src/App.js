@@ -5,6 +5,7 @@ import Category from "./components/Category";
 import RecipeDetail from "./components/RecipeDetail";
 import useContentful from "./hook/use-contentful";
 import { Route, Switch } from "react-router-dom";
+import Recipes from './components/Recipes';
 
 function App() {
   const { breakfast, salad, appetizer, errors } = useContentful();
@@ -32,7 +33,14 @@ function App() {
                 appetizer={appetizer}
               />
             </Route>
-            <Route path="/:category/:id?">
+            <Route  exact path="/:category">
+              <Recipes
+                breakfast={breakfast}
+                salad={salad}
+                appetizer={appetizer}
+              />
+            </Route>
+            <Route path="/:category/:id">
               <RecipeDetail
                 breakfast={breakfast}
                 salad={salad}

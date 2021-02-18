@@ -2,7 +2,8 @@
 @import "footer.css";
 @import "header.css";
 @import "category.css";
-@import "recipe.css";
+@import "recipe-detail.css";
+@import "recipes.css";
 
 :root{
   --drak-yellow : #ffc300;

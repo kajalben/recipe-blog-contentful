@@ -13,23 +13,35 @@ const Header = () => {
     <div className="headerContainer">
       <div className="navbarContainer">
         <Navbar bg="transparent" expand="lg">
-          <Navbar.Brand >Bits & Bites</Navbar.Brand>
+          <Navbar.Brand>Bits & Bites</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link><NavLink className="home-link" to="/">Home</NavLink></Nav.Link>
+              <Nav.Link>
+                <NavLink className="home-link" to="/">
+                  Home
+                </NavLink>
+              </Nav.Link>
               <NavDropdown
                 className="textColor bgColor"
                 title="Our Sections"
                 id="basic-nav-dropdown"
               >
-                <NavDropdown.Item href="/breackfast">
-                  Breakfast
+                <NavDropdown.Item>
+                  <NavLink className="home-link"  activeClassName="active-link" to="/breackfast">
+                    Breackfast
+                  </NavLink>
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/appetizer">
-                  Appetizers
+                <NavDropdown.Item>
+                  <NavLink className="home-link" activeClassName="active-link" to="/appetizer">
+                    Appetizers
+                  </NavLink>
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/salad">Salads</NavDropdown.Item>
+                <NavDropdown.Item>
+                  <NavLink className="home-link" activeClassName="active-link" to="/salad">
+                    Salads
+                  </NavLink>
+                </NavDropdown.Item>
               </NavDropdown>
             </Nav>
             <Form inline>

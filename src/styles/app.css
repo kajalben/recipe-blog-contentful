@@ -1,6 +1,8 @@
 .main-container {
-  width: 100%;
+  width: 80%;
+  margin: auto;
   min-height: 90vh;
+
 }
 .error-message {
   font-family: "Roboto", sans-serif;
