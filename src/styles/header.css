@@ -33,3 +33,22 @@ Button.bgColor {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.home-link{
+  text-decoration: none;
+  color: black;
+}
+.home-link:hover{
+  text-decoration: none;
+}
+
+@media all and (max-width: 992px) {
+  .claimContainer h1 {
+    font-size: 4rem;
+  }
+}
+
+@media all and (max-width: 688px) {
+  .claimContainer h1 {
+    font-size: 3rem;
+  }
+}

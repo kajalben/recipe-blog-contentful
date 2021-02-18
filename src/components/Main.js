@@ -1,8 +1,5 @@
-
-const Main = () =>{
-    return(
-        <h1>Main</h1>
-    );
-}
+const Main = ({ children }) => {
+  return <div className="main-container">{children}</div>;
+};
 
 export default Main;

@@ -1,0 +1,14 @@
+.main-container{
+  min-height: 90vh;
+}
+@media all and (max-width: 992px) {
+  body {
+    font-size: 14px !important;
+  }
+}
+
+@media all and (max-width: 688px) {
+  body {
+    font-size: 12px !important;
+  }
+}
