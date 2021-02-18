@@ -1,5 +1,13 @@
-.main-container{
+.main-container {
+  width: 100%;
   min-height: 90vh;
+}
+.error-message {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
 }
 @media all and (max-width: 992px) {
   body {

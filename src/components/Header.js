@@ -13,14 +13,11 @@ const Header = () => {
     <div className="headerContainer">
       <div className="navbarContainer">
         <Navbar bg="transparent" expand="lg">
-          <Navbar.Brand>
-            <NavLink to="/"><p className="home-link">Bits & Bites</p> </NavLink>
-           
-            </Navbar.Brand>
+          <Navbar.Brand >Bits & Bites</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link><NavLink className="home-link" to="/">Home</NavLink></Nav.Link>
               <NavDropdown
                 className="textColor bgColor"
                 title="Our Sections"

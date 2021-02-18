@@ -34,11 +34,14 @@ Button.bgColor {
   padding-right: 1rem;
 }
 .home-link{
+  margin: 0;
+  padding: 0;
+  color: rgba(0,0,0,.5);
   text-decoration: none;
-  color: black;
 }
 .home-link:hover{
   text-decoration: none;
+  color: rgba(0,0,0,.7);
 }
 
 @media all and (max-width: 992px) {

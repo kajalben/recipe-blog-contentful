@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-const AllRecipe = ({ breakfast, salad, appetizer }) => {
+const Recipes = ({ breakfast, salad, appetizer }) => {
   const { category } = useParams();
 
   const displayRecipes = (recipes) => {
@@ -19,4 +19,4 @@ const AllRecipe = ({ breakfast, salad, appetizer }) => {
   );
 };
 
-export default AllRecipe;
+export default Recipes;

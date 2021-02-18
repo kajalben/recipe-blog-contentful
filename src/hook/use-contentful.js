@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 
 const useContentful = () => {
-  const [categoy, setCategory] = useState();
   const [breakfast, setBreackfast] = useState();
   const [appetizer, setAppetizer] = useState();
   const [salad, setSalad] = useState();
@@ -53,42 +52,6 @@ const useContentful = () => {
   }
   }`;
 
-//   const query = `
-//   {
-//     salad: appetizerRecipeCollection(where: {category: "salad"}) {
-//       items {
-//         sys {
-//           id
-//         }
-//         image {
-//           url
-//         }
-//         name
-//         description
-//         items
-//         direction
-//         category
-//       }
-//     }
-//     appetizer: appetizerRecipeCollection(where: {category: "appetizer"}) {
-//       items {
-//         sys {
-//           id
-//         }
-//         image {
-//           url
-//         }
-//         name
-//         description
-//         items
-//         direction
-//         category
-//       }
-//     }
-//   }
-  
-// `;
-
   // https://graphql.contentful.com/content/v1/spaces/1g6suo7uvjo8/explore?access_token=sGG6xod2VcVmD6JIWXXKheqME47G4ViKmTD6lNCZpLo
   useEffect(() => {
     fetch(
@@ -125,7 +88,7 @@ export default useContentful;
 //  GraphQL Where query with AND
 // query{
 //   {
-//     appetizerRecipeCollection(where :{
+//     appetizer :appetizerRecipeCollection(where :{
 //       AND : [
 //         {category : "salad"},
 //         {name : "Parmesan Crisps with Marinara Sauce"}
