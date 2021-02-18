@@ -1,0 +1,12 @@
+.loader-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    color: rgba(5, 5, 5, 0.801);
+}
+
+
+.loader-container h3 {
+    padding-left: 2rem;
+}
+
