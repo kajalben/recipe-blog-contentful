@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import Main from "./components/Main";
 import Category from "./components/Category";
 import RecipeDetail from "./components/RecipeDetail";
+import Loader from "./components/Loader";
 import useContentful from "./hook/use-contentful";
 import { Route, Switch } from "react-router-dom";
 
@@ -14,7 +15,7 @@ function App() {
       return <span className="error-message">{errors.map((error) => `Try Again ! ${error.message}`).join(",")}</span>;
     }
     if (!breakfast && !salad && !appetizer) {
-      return <span>Loading......</span>;
+      return /*<span>Loading......</span>*/<div><Loader /></div>
     }
   };
 

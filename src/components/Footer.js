@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/footer.css";
 import Nav from "react-bootstrap/Nav";
+import {Route, Link, Switch} from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -12,9 +13,9 @@ const Footer = () => {
           bg="transparent"
         >
           <Nav.Item>
-            <Nav.Link href="/home">
-              <p className="linkText">Home</p>
-            </Nav.Link>
+            <Link to="/">
+              <p className="homelinkText">Home</p>
+            </Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link eventKey="link-1">
