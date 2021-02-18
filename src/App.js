@@ -1,21 +1,49 @@
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Main from './components/Main';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Main from "./components/Main";
 import Category from "./components/Category";
-import RecipeDetail from './components/RecipeDetail';
-import './styles/style.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import useContentful from './hook/use-contentful';
+import RecipeDetail from "./components/RecipeDetail";
+
+import useContentful from "./hook/use-contentful";
+import { Route, Switch } from "react-router-dom";
 
 function App() {
-  const {categoy, errors, brackfast, salad} = useContentful();
-if(errors) return <span>{errors.map( error => error.message).join(',')}</span>
-if(!categoy && !brackfast && !salad) return <span>Loading......</span>
+  const { breakfast, salad, appetizer, errors } = useContentful();
+
+  const displayloader = () => {
+    if (errors) {
+      return <span>{errors.map((error) => error.message).join(",")}</span>;
+    }
+    if (!breakfast && !salad && !appetizer) {
+      return <span>Loading......</span>;
+    }
+  };
+
   return (
     <div className="App">
       <Header />
-      {(categoy && brackfast && salad) && <Category categoy={categoy} brackfast={brackfast}  salad={salad}/>} 
-      {/* <RecipeDetail /> */}
+      <Main>
+        {displayloader()}
+        {breakfast && salad && appetizer && (
+          <Switch>
+            <Route exact path="/">
+              <Category
+                breakfast={breakfast}
+                salad={salad}
+                appetizer={appetizer}
+              />
+            </Route>
+            <Route path="/:category/:id?">
+              <RecipeDetail
+                breakfast={breakfast}
+                salad={salad}
+                appetizer={appetizer}
+              />
+            </Route>
+          </Switch>
+        )}
+      </Main>
+
       <Footer />
     </div>
   );
