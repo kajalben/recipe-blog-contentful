@@ -33,17 +33,19 @@ Button.bgColor {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-.home-link{
+.home-link {
   margin: 0;
   padding: 0;
-  color: rgba(0,0,0,.5);
+  color: rgba(0, 0, 0, 0.5);
   text-decoration: none;
 }
-.home-link:hover{
+.home-link:hover {
   text-decoration: none;
-  color: rgba(0,0,0,.7);
+  color: rgba(0, 0, 0, 0.7);
 }
-
+.active-link {
+  color: black;
+}
 @media all and (max-width: 992px) {
   .claimContainer h1 {
     font-size: 4rem;
