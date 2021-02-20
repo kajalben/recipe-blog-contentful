@@ -9,14 +9,14 @@ import { Route, Switch } from "react-router-dom";
 import Recipes from './components/Recipes';
 
 function App() {
-  const { breakfast, salad, appetizer, errors } = useContentful();
+  const { isLoading, breakfast, salad, appetizer, errors } = useContentful();
 
   const displayloader = () => {
     if (errors) {
       return <span className="error-message">{errors.map((error) => `Try Again ! ${error.message}`).join(",")}</span>;
     }
-    if (!breakfast && !salad && !appetizer) {
-      return /*<span>Loading......</span>*/<div><Loader /></div>
+    if (isLoading) {
+      return <div><Loader /></div>
     }
   };
 

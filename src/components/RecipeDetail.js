@@ -38,6 +38,7 @@ const RecipeDetail = ({ breakfast, salad, appetizer }) => {
 
   return (
     <>
+    
       {category == "breackfast" && filterRecipe(breakfast)}
       {category == "salad" && filterRecipe(salad)}
       {category == "appetizer" && filterRecipe(appetizer)}

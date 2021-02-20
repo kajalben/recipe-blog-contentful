@@ -4,9 +4,8 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Form from "react-bootstrap/Form";
-import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
-import { Switch, Route, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -28,17 +27,29 @@ const Header = () => {
                 id="basic-nav-dropdown"
               >
                 <NavDropdown.Item>
-                  <NavLink className="home-link"  activeClassName="active-link" to="/breackfast">
+                  <NavLink
+                    className="home-link"
+                    activeClassName="active-link"
+                    to="/breackfast"
+                  >
                     Breackfast
                   </NavLink>
                 </NavDropdown.Item>
                 <NavDropdown.Item>
-                  <NavLink className="home-link" activeClassName="active-link" to="/appetizer">
+                  <NavLink
+                    className="home-link"
+                    activeClassName="active-link"
+                    to="/appetizer"
+                  >
                     Appetizers
                   </NavLink>
                 </NavDropdown.Item>
                 <NavDropdown.Item>
-                  <NavLink className="home-link" activeClassName="active-link" to="/salad">
+                  <NavLink
+                    className="home-link"
+                    activeClassName="active-link"
+                    to="/salad"
+                  >
                     Salads
                   </NavLink>
                 </NavDropdown.Item>

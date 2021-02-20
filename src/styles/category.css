@@ -1,3 +1,7 @@
+.category-container{
+    width: 80%;
+    margin: auto;
+}
 .category-content{
     margin: 2rem 0;
 }

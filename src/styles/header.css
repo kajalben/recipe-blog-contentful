@@ -46,6 +46,11 @@ Button.bgColor {
 .active-link {
   color: black;
 }
+.dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: var(--drak-yellow) !important;
+}
 @media all and (max-width: 992px) {
   .claimContainer h1 {
     font-size: 4rem;

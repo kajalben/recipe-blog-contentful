@@ -1,5 +1,4 @@
-import { useParams } from "react-router-dom";
-import { useHistory } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 
 const Recipes = ({ breakfast, salad, appetizer }) => {
   const { category } = useParams();
@@ -28,7 +27,7 @@ const Recipes = ({ breakfast, salad, appetizer }) => {
   };
   return (
     <>
-      <div className="recipe-grid-container" >
+      <div className="recipe-grid-container">
         {category === "breackfast" && displayRecipes(breakfast)}
         {category === "salad" && displayRecipes(salad)}
         {category === "appetizer" && displayRecipes(appetizer)}
