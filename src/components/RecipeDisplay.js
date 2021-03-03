@@ -30,7 +30,6 @@ const useStyles = makeStyles((theme) => ({
 
 const RecipeDisplay = (props) => {
   const history = useHistory();
-  console.log(history);
 
   const haldleClick = (id, category) => {
     history.push(`${category}/${id}`);

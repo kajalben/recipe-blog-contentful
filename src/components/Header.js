@@ -5,9 +5,11 @@ import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import { NavLink } from "react-router-dom";
+import { NavLink, useHistory, useLocation } from "react-router-dom";
 
 const Header = () => {
+  const location = useLocation();
+  const history = useHistory();
   return (
     <div className="headerContainer">
       <div className="navbarContainer">
@@ -16,11 +18,20 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
+              {location.pathname != "/" && 
+                 <Nav.Link>
+                 <span className="home-link" onClick={() => history.goBack()}>
+                   Back
+                 </span>
+               </Nav.Link>
+              }
+             
               <Nav.Link>
                 <NavLink className="home-link" to="/">
                   Home
                 </NavLink>
               </Nav.Link>
+
               <NavDropdown
                 className="textColor bgColor"
                 title="Our Sections"
