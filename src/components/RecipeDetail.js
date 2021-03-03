@@ -23,13 +23,15 @@ const RecipeDetail = ({ breakfast, salad, appetizer }) => {
 
             <div className="recipe-content recipe-ingredients">
               <h3>Ingredients</h3>
-              <p dangerouslySetInnerHTML={{ __html: marked(recipe.items) }}></p>
+              <p>{marked(recipe.items)}</p>
+              {/* <p dangerouslySetInnerHTML={{ __html: marked(recipe.items) }}></p> */}
             </div>
             <div className="recipe-content recipe-direction">
               <h3>Directions</h3>
-              <p
+              <p>{marked(recipe.direction)}</p>
+              {/* <p
                 dangerouslySetInnerHTML={{ __html: marked(recipe.direction) }}
-              ></p>
+              ></p> */}
             </div>
           </div>
         );

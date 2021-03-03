@@ -6,17 +6,25 @@ import RecipeDetail from "./components/RecipeDetail";
 import Loader from "./components/Loader";
 import useContentful from "./hook/use-contentful";
 import { Route, Switch } from "react-router-dom";
-import Recipes from './components/Recipes';
+import Recipes from "./components/Recipes";
 
 function App() {
   const { isLoading, breakfast, salad, appetizer, errors } = useContentful();
 
   const displayloader = () => {
     if (errors) {
-      return <span className="error-message">{errors.map((error) => `Try Again ! ${error.message}`).join(",")}</span>;
+      return (
+        <span className="error-message">
+          {errors.map((error) => `Try Again ! ${error.message}`).join(",")}
+        </span>
+      );
     }
     if (isLoading) {
-      return <div><Loader /></div>
+      return (
+        <div>
+          <Loader />
+        </div>
+      );
     }
   };
 
@@ -34,7 +42,7 @@ function App() {
                 appetizer={appetizer}
               />
             </Route>
-            <Route  exact path="/:category">
+            <Route exact path="/:category">
               <Recipes
                 breakfast={breakfast}
                 salad={salad}
@@ -51,7 +59,6 @@ function App() {
           </Switch>
         )}
       </Main>
-
       <Footer />
     </div>
   );
